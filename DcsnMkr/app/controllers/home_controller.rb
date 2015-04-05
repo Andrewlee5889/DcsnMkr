@@ -7,9 +7,10 @@ class HomeController < ApplicationController
   end
 
   def authenticate 
-    if params[:email] == "ADL" && params[:password] == "ADL"
+    if params[:password] == User.where(username: params[:username]).last.password
       true
     else
+      flash[:error] = "WRONG USER"
       false
     end
   end
