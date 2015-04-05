@@ -18,7 +18,7 @@ for (i = 0; i < qs.length; i++) {
     text += qs[i] + "<br>";
 }
 
-document.getElementById("demo").innerHTML = text;
+$(document).ready(function() { document.getElementById("demo").innerHTML = text;} );
 </script>
 
 
