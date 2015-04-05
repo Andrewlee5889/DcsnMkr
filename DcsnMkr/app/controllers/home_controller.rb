@@ -1,13 +1,16 @@
 class HomeController < ApplicationController
   def index
+    redirect_to '/' unless authenticate
   end
 
   def login
-    #User.find(params[:name])
-    #if User.password == params[:password]
-      index
-    #else
-    #  flash[:error] = "Wrong login"
-    #end
+  end
+
+  def authenticate 
+    if params[:email] == "ADL" && params[:password] == "ADL"
+      true
+    else
+      false
+    end
   end
 end
