@@ -160,6 +160,13 @@ h4 {
 	font-size:12px;
 }
 
+/*INDEX CONTENT*/
+
+#demo {
+	padding:8px;
+	font-size:18px;
+}
+
 /*Video Background*/
 #video-screen {
 	height:400px;
