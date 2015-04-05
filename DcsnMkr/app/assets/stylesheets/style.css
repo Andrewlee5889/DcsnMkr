@@ -5,13 +5,12 @@ body {
 	/*font-family: 'Roboto', sans-serif;*/
 	/*font-family: 'Open Sans', sans-serif;*/
 	font-family: 'Montserrat', sans-serif;
-	color:#3E404B;
+	color:#000;
 }
 
 /*NAV BAR*/
 
 #nav {
-	background-color:#E6E8E6;
 	color:#fff;
 	opacity:0.7;
 	position:fixed;
