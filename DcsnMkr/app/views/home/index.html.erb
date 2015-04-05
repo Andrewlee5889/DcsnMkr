@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 
-<html class="no-js" lang="en">
-<head>
-  <!-- title and meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <meta content="description" name="Ask Mo">
+  <html class="no-js" lang="en">
+  <head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <meta content="description" name="Ask Mo">
 
-<title>Ask Mo'</title>
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <title>Ask Mo'</title>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-<script language="javascript" type="text/javascript">
-var qs = ["data 1", "data 2", "data 3", "data 4"];
-var text = "";
-var i;
-for (i = 0; i < qs.length; i++) {
-    text += qs[i] + "<br>";
-}
+  <script language="javascript" type="text/javascript">
+  	//var qs = <%= Post.order("updated_at DESC").limit(5) %>;
+  	var qs = ["post1","post2","post3","post4"];
+  	var text = "";
+  	var i;
+  	for (i = 0; i < qs.length; i++) {
+  	    text += qs[i] + "<br>";
+  	}
 
-document.getElementById("demo").innerHTML = text;
-</script>
+  	$(document).ready(function() { document.getElementById("demo").innerHTML = text;} );
+  </script>
 
 
-</head>
+  </head>
 
-<body>
-<div id="home">
-<div id="content">
+  <body>
+  <div id="home">
+  <div id="content">
 
-<div id="nav">
-  <div class="text">
-    Ask Mo'
-  </a>
+  <div id="nav">
+    <div class="text">
+      Ask Mo'
+    </a>
+  </div>
+
+  <hr />
+
+  <p id="demo"></p>
+
+  <div id="footer">
+  </div>
+
+  </div>
 </div>
-
-<hr />
-
-<p id="demo"></p>
-
-<div id="footer">
-</div>
-
-</div>
-</div>
-
-

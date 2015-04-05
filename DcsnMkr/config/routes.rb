@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root :to => 'home#login'
+  root :to => 'home#index'
   namespace :home do
     get :index
   end

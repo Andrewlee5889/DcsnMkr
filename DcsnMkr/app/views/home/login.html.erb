@@ -8,7 +8,20 @@
   <meta content="description" name="Ask Mo">
 
 <title>Ask Mo'</title>
+
+<link rel="stylesheet" href="../../assets/stylesheets/animations.css">
+<link rel="stylesheet" href="../../assets/stylesheets/style.css">
+<link rel="stylesheet" href="../../assets/stylesheets/parallax.css">
+<link rel="icon" href="app/assets/images/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<!--Stock footage can be used with license: 
+    https://www.youtube.com/watch?v=4HuPwXUWF9o -->
+<video autoplay loop class="people-walk">
+    <source src="assets/people-walk.mp4" type="video/mp4">
+</video>
+
+<!-- logo animation effect -->
 
 </head>
 
@@ -25,7 +38,34 @@
     <br>
     Answers from everyone else.
 </div>
+
     <center><a href="../layouts/application.html.erb" class="button btnFade btnBlueGreen">Login</a></center>
     <center><a href="#" class="button btnFade btnBlueGreen">Sign Up</a></center>
+
+<hr />
+
+<form>Number of Address Lines:
+    <input type="text" id="AddyLines" size=2 maxlength=2 onChange="numOfLines(this.value);" />
+    <div id="addy_lines">Text</div>
+</form>
+
+<div id="footer">
+</div>
+  <form accept-charset="UTF-8" action="/home/index" method="get">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input name="authenticity_token" type="hidden"
+           value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
+    <label for="session_email">Email</label>
+    <input class="form-control" id="session_email"
+           name="email" type="text" />
+    <label for="session_password">Password</label>
+    <input id="session_password" name="password"
+           type="password" />
+    <input class="btn btn-primary" name="commit" type="submit"
+         value="Log in" />
+  </form>
+  <center><a href="/home/index" class="button btnFade btnBlueGreen">Login</a></center>
+  <center><a href="#" class="button btnFade btnBlueGreen">Sign Up</a></center>
+
 </div>
 </div>
