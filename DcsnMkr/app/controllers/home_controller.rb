@@ -3,11 +3,11 @@ class HomeController < ApplicationController
   end
 
   def login
-    User.find(params[:name])
-    if User.password == params[:password]
+    #User.find(params[:name])
+    #if User.password == params[:password]
       index
-    else
-      flash[:error] = "Wrong login"
-    end
+    #else
+    #  flash[:error] = "Wrong login"
+    #end
   end
 end
