@@ -10,22 +10,38 @@
 <title>Ask Mo'</title>
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
+<script language="javascript" type="text/javascript">
+var qs = ["data 1", "data 2", "data 3", "data 4"];
+var text = "";
+var i;
+for (i = 0; i < qs.length; i++) {
+    text += qs[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
 </head>
 
 <body>
 <div id="home">
 <div id="content">
-    <div id="object" class="slideUp">
-        <br>
-    <h1>Ask Mo'</h1>
-    </div>
 
-<div class="tagline">
-    Questions by you. 
-    <br>
-    Answers from everyone else.
+<div id="nav">
+  <div class="text">
+    Ask Mo'
+  </a>
 </div>
-    <center><a href="../layouts/application.html.erb" class="button btnFade btnBlueGreen">Login</a></center>
-    <center><a href="#" class="button btnFade btnBlueGreen">Sign Up</a></center>
+
+<hr />
+
+<p id="demo"></p>
+
+<div id="footer">
+</div>
+
 </div>
 </div>
+
+
