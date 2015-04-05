@@ -17,6 +17,9 @@ gem 'bootstrap-sass'
 gem 'sass-rails'
 gem 'videojs_rails'
 gem 'pry'
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
