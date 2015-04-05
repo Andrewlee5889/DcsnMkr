@@ -16,7 +16,7 @@
   	var text = "";
   	var i;
   	for (i = 0; i < qs.length; i++) {
-  	    text += qs[i] + "<br>";
+  	    text += "Question " + (i+1) + ": " + qs[i] + "<br>";
   	}
 
   	$(document).ready(function() { document.getElementById("demo").innerHTML = text;} );
@@ -28,7 +28,7 @@
   <body>
   <div id="home">
   <div id="content">
-    
+
   <hr />
 
   <p id="demo"></p>
