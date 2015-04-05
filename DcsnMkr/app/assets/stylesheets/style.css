@@ -102,8 +102,6 @@ a.button {
     text-decoration:none;
 }
 
-/*Chart Stuff*/
-
 
 /*Header Stuff*/
 h1 {
@@ -136,11 +134,6 @@ h4 {
 	font-size:35px;
 	padding-bottom:3%;
 	color:#fff;
-}
-
-.down-arrow {
-	padding-top:5%;
-	opacity:0.7;
 }
 
 .bar-code {
@@ -271,6 +264,7 @@ h4 {
 footer {
 	padding-top:10px;
 	height:70px;
+	background-color:#ECFFB0;
 } 
 
 .final-content {
@@ -278,6 +272,20 @@ footer {
 	font-size:35px;
 	padding-top:4%;
 	padding-bottom:7%;
+}
+
+/*QUESTION CONTENT*/
+
+#q-content {
+	margin:5%;
+}
+
+#q-content a {
+
+}
+
+#q-content a:hover {
+
 }
 
 /*FOOTER*/

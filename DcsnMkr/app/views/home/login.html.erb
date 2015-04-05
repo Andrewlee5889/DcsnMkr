@@ -5,7 +5,7 @@
   <!-- title and meta -->
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <meta content="description" name="Guilt Fit">
+  <meta content="description" name="Ask Mo">
 
 <title>Ask Mo'</title>
 
@@ -28,16 +28,31 @@
 <body>
 <div id="home">
 <div id="content">
-    <div id="object" class="slideUp">
-        <br>
-    <h1>Ask Mo'</h1>
-    </div>
 
-<div class="tagline">
-    Questions by you. 
-    <br>
-    Answers from everyone else.
+    <script language="javascript" type="text/javascript">
+function numOfLines(choice) {
+    for (var i = 0; i < choice; ++i) {
+        document.getElementById("addy_lines").innerHTML = document.getElementById("addy_lines").innerHTML + "<br />Name: <input type='text' id='Name' size=50 maxlength=50 /> ";
+    }
+}
+    </script>
+
+<div id="nav">
+  <div class="text">
+    Ask Mo'
+  </a>
 </div>
+
+<hr />
+
+<form>Number of Address Lines:
+    <input type="text" id="AddyLines" size=2 maxlength=2 onChange="numOfLines(this.value);" />
+    <div id="addy_lines">Text</div>
+</form>
+
+<div id="footer">
+</div>
+<<<<<<< HEAD
   <form accept-charset="UTF-8" action="/home/index" method="get">
     <input name="utf8" type="hidden" value="&#x2713;" />
     <input name="authenticity_token" type="hidden"
@@ -53,5 +68,8 @@
   </form>
   <center><a href="/home/index" class="button btnFade btnBlueGreen">Login</a></center>
   <center><a href="#" class="button btnFade btnBlueGreen">Sign Up</a></center>
+=======
+
+>>>>>>> d155c8585ee5dcfd294fd2117ed335924a484673
 </div>
 </div>
